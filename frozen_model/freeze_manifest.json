@@ -1,0 +1,25 @@
+{
+    "freeze_date": "2026-11-08T17:17:03.320702",
+    "checkpoint_epoch": 4,
+    "validation_best_dice": 0.8591815931252961,
+    "selected_threshold": 0.5,
+    "training_years": [
+        2021,
+        2022,
+        2023
+    ],
+    "validation_year": 2024,
+    "reserved_test_year": 2025,
+    "normalization_file": "normalization_stats.json",
+    "model_frozen": true,
+    "checksums_sha256": {
+        "best_flood_model.pth": "e153d17eabf96164c5d88cb03b6a171698e7b4fc79ef57e84209100f80ba1742",
+        "best_threshold.json": "b1477e5b4152c8fe852d480cc591feac272957474fcdd435014163bd47e9bf4d",
+        "normalization_stats.json": "97ea16d664d4651c1681ed22f0ac3e59d05fa6ed944a90fcbe987fe555cb882f",
+        "fusion_decoder.py": "26fcf34516f00e38c2a0a629161f1043c246c7a9ba1594e46a8b9474f9862cc5",
+        "sar_encoder.py": "61a44fe68c5b6bf1fea37a3591b671a23d2cbedd3a3c5d083d43073634e6dcb9",
+        "dem_encoder.py": "3f5f01efdfc83804ca689d123844da73a7c0d15a7c9b6bee31f5edded82f22e5",
+        "rainfall_encoder.py": "9f0e80163354abdfd1ae309784f5e221c37e24382af32ff76968092be1056dfb",
+        "pre_flood_dataset.py": "72a13e7ba4e5eb6a08d29782947786a75a73f126c5992912fcf631db7888ce1a"
+    }
+}

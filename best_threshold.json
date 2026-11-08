@@ -1,0 +1,10 @@
+{
+    "threshold": 0.5,
+    "selection_metric": "validation_dice",
+    "validation_dice": 0.8591815931252961,
+    "validation_iou": 0.7531273934114038,
+    "validation_precision": 0.8414147176245254,
+    "validation_recall": 0.8777149657813814,
+    "checkpoint": "best_flood_model.pth",
+    "validation_year": 2024
+}

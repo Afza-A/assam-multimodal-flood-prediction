@@ -1,0 +1,13 @@
+STRUCTURAL VERIFICATION RESULTS
+SAR rows: 4500
+Rainfall rows: 45000
+DEM rows: 300
+SAR every district/year/phase is 10x10: True
+SAR/rain coordinates match: True
+SAR/DEM coordinates match: True
+Rain/DEM coordinates match: True
+Rainfall has 10 days per pixel/year/phase: True
+All datasets have no missing values: True
+All datasets have no duplicate rows: True
+
+All datasets are synthetic. These checks do not establish real-world authenticity or event correctness.
