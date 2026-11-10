@@ -1,0 +1,99 @@
+{
+  "seed": 42,
+  "train_years": [
+    2021,
+    2022,
+    2023
+  ],
+  "validation_year": 2024,
+  "test_year": 2025,
+  "fixed_threshold_for_all_models": 0.5,
+  "candidate_learning_rates": [
+    0.001,
+    0.0003
+  ],
+  "max_epochs": 50,
+  "early_stopping_patience": 8,
+  "selected_models": {
+    "SAR-only": {
+      "modalities": [
+        "sar"
+      ],
+      "learning_rate": 0.001,
+      "best_epoch": 4,
+      "validation_dice": 0.8616635215548532,
+      "threshold": 0.5,
+      "checkpoint": "selected_models\\sar_only.pth"
+    },
+    "DEM-only": {
+      "modalities": [
+        "dem"
+      ],
+      "learning_rate": 0.001,
+      "best_epoch": 1,
+      "validation_dice": 0.8374158430012356,
+      "threshold": 0.5,
+      "checkpoint": "selected_models\\dem_only.pth"
+    },
+    "Rainfall-only": {
+      "modalities": [
+        "rainfall"
+      ],
+      "learning_rate": 0.0003,
+      "best_epoch": 11,
+      "validation_dice": 0.8690751445074146,
+      "threshold": 0.5,
+      "checkpoint": "selected_models\\rainfall_only.pth"
+    },
+    "SAR+DEM": {
+      "modalities": [
+        "sar",
+        "dem"
+      ],
+      "learning_rate": 0.001,
+      "best_epoch": 2,
+      "validation_dice": 0.8614800759000708,
+      "threshold": 0.5,
+      "checkpoint": "selected_models\\sar_dem.pth"
+    },
+    "SAR+Rainfall": {
+      "modalities": [
+        "sar",
+        "rainfall"
+      ],
+      "learning_rate": 0.001,
+      "best_epoch": 2,
+      "validation_dice": 0.8627055090844207,
+      "threshold": 0.5,
+      "checkpoint": "selected_models\\sar_rainfall.pth"
+    },
+    "DEM+Rainfall": {
+      "modalities": [
+        "dem",
+        "rainfall"
+      ],
+      "learning_rate": 0.001,
+      "best_epoch": 13,
+      "validation_dice": 0.8703086509188954,
+      "threshold": 0.5,
+      "checkpoint": "selected_models\\dem_rainfall.pth"
+    },
+    "Random Forest": {
+      "n_estimators": 200,
+      "max_depth": null,
+      "min_samples_leaf": 2,
+      "feature_modalities": [
+        "SAR VV",
+        "DEM",
+        "Rainfall Days 1-10"
+      ],
+      "feature_count": 12,
+      "validation_dice": 0.7762613096138993,
+      "threshold": 0.5,
+      "checkpoint": "selected_models/random_forest.joblib"
+    }
+  },
+  "full_model_checkpoint_sha256": "e153d17eabf96164c5d88cb03b6a171698e7b4fc79ef57e84209100f80ba1742",
+  "freeze_manifest_sha256": "e3d097c3d7a9eeb9636d0cfb5606dc4f4d64d492fb89099055e7f82e6714ba5e",
+  "saved_before_2025_test": true
+}

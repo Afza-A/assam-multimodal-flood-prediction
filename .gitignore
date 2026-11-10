@@ -179,3 +179,34 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+.env
+
+# Evaluation environment
+.venv_eval/
+
+# Real-world data - excluded from interim
+real_data/
+external_data/
+
+# Real-data scripts
+download_nagaon_vv.py
+extract_nagaon_rainfall.py
+inspect_real_sar.py
+inspect_nagaon_sar.py
+inspect_rainfall.py
+check_grid_coverage.py
+check_rainfall_metadata.py
+search_nagaon_catalog.py
+search_nagaon_wide_period.py
+test_copernicus_auth.py
+plot_sar_distribution.py
+visualize_real_sar.py
+
+# Stage 5 - excluded from interim
+fusion_ablation/
+ablation_study_results/
+run_fusion_ablation.py
+run_ablation_study.py
+
+# Backup copy
+frozen_model_preverified_nested_20261109/

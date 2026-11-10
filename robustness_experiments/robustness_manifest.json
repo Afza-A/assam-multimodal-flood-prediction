@@ -1,0 +1,24 @@
+{
+  "experiment": "Inference-only missing/noisy modality robustness",
+  "created_at": "2026-11-09T19:53:37.700223+05:30",
+  "dataset": "Fully synthetic held-out 2025 split",
+  "test_events": 60,
+  "frozen_checkpoint_epoch": 4,
+  "threshold": 0.5,
+  "missing_modality_strategy": "Set normalized modality tensor to zero (training-mean input); do not retrain.",
+  "noise": "Additive zero-mean Gaussian noise in normalized training-standard-deviation units.",
+  "noise_sigmas": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "noise_seed_base": 24051,
+  "no_retraining_or_threshold_tuning": true,
+  "frozen_manifest_sha256": "e3d097c3d7a9eeb9636d0cfb5606dc4f4d64d492fb89099055e7f82e6714ba5e",
+  "frozen_checkpoint_sha256": "e153d17eabf96164c5d88cb03b6a171698e7b4fc79ef57e84209100f80ba1742",
+  "outputs": [
+    "robustness_comparison.png",
+    "robustness_event_metrics.csv",
+    "robustness_overall_metrics.csv"
+  ]
+}

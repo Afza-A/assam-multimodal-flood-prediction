@@ -1,0 +1,14 @@
+{
+  "experiment": "Held-out synthetic temporal test",
+  "test_year": 2025,
+  "events": 60,
+  "pixels_per_event": 100,
+  "input_window": "Pre-Flood SAR VV; rainfall Days 1-10; static DEM",
+  "threshold": 0.5,
+  "checkpoint_epoch": 4,
+  "checkpoint_sha256": "e153d17eabf96164c5d88cb03b6a171698e7b4fc79ef57e84209100f80ba1742",
+  "freeze_manifest_sha256": "e3d097c3d7a9eeb9636d0cfb5606dc4f4d64d492fb89099055e7f82e6714ba5e",
+  "device": "cpu",
+  "evaluated_at": "2026-11-09T19:01:20.142088+05:30",
+  "interpretation": "Simulation-based results; synthetic inputs and reference masks, not real-world validation."
+}

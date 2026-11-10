@@ -1,0 +1,27 @@
+{
+  "experiment": "Reduced-modality baselines and Random Forest",
+  "created_at": "2026-11-09T19:42:03.339735+05:30",
+  "data_status": "Fully synthetic; simulation-based results only",
+  "training_years": [
+    2021,
+    2022,
+    2023
+  ],
+  "validation_year": 2024,
+  "test_year": 2025,
+  "test_events": 60,
+  "threshold": 0.5,
+  "full_model_was_not_modified": true,
+  "full_model_threshold_was_not_modified": true,
+  "baseline_hyperparameters_selected_on_validation_only": true,
+  "full_model_frozen_manifest_sha256": "e3d097c3d7a9eeb9636d0cfb5606dc4f4d64d492fb89099055e7f82e6714ba5e",
+  "outputs": [
+    "baseline_test_event_metrics.csv",
+    "baseline_test_overall_metrics.csv",
+    "baseline_vs_proposed_2025.csv",
+    "baseline_vs_proposed_2025.png",
+    "random_forest_validation_grid.csv",
+    "selected_configurations.json",
+    "validation_hyperparameter_grid.csv"
+  ]
+}
